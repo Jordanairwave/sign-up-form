@@ -71,9 +71,5 @@ article, aside, details, figure, footer, header, hgroup, nav, section {
 
 img { max-width: 100%; }
 
-/* Media Queries
--------------------------------------------------------------------------------------------------------*/
-@media all and (max-width: 1200px) {
-		
-	
-}
+
+/* Form Styling */
