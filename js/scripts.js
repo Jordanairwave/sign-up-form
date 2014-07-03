@@ -34,8 +34,7 @@ var site = {
 			},
 			submitHandler: function(form) {
 				//Serialize the data from the form to allow it to be sent
-				site.formData = $('#contact-form').serialize();
-				
+				site.formData = $('#sign-up-form').serialize();
 				//Submit the form using Ajax
 				$.ajax({
 					type: 'POST',

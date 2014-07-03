@@ -12,7 +12,7 @@
 		$birthday = $day . '/' . $month . '/' . $year;
 		$code = $_POST['code'];
 		$from = 'From: no-reply@ENTER-YOUR-DOMAIN-HERE.com';
-		$to = 'jordan@websir.co.uk';
+		$to = 'ENTER YOUR EMAIL ADDRESS';
 		$subject = 'New sign up from website';
 		
 		//construct email message
