@@ -17,22 +17,22 @@
 		<section id="main-content">
 			<form id="sign-up-form" method="post" action="form/send.php">
 				<fieldset>
-					<label for="first-name">First Name</label>
-					<input type="text" name="first-name" id="first-name" />
+					<label for="forename">First Name</label>
+					<input type="text" name="forename" id="forename" />
 				</fieldset>
 				<fieldset>
 					<label for="surname">Surname</label>
 					<input type="text" name="surname" id="surname" />
 				</fieldset>
 				<fieldset>
-					<label for="email-address">Email Address</label>
-					<input type="text" name="email-address" id="email-address" />
+					<label for="email">Email Address</label>
+					<input type="text" name="email" id="email" />
 				</fieldset>
-				<fieldset class="birthday Wrapper">
+				<fieldset class="birthday-wrapper">
 					<h3>Please enter your birthday</h3>
 					<fieldset>
-						<label for="birthday-day">Day</label>
-						<select name="birthday-day">
+						<label for="day">Day</label>
+						<select name="day">
 							<option value="1">1</option>
 							<option value="2">2</option>
 							<option value="3">3</option>
@@ -67,8 +67,8 @@
 						</select>
 					</fieldset>
 					<fieldset>
-						<label name="birthday-month">Month</label>
-						<select name="birthday-month">
+						<label name="month">Month</label>
+						<select name="month">
 							<option value="1">January</option>
 							<option value="2">February</option>
 							<option value="3">March</option>
@@ -84,18 +84,24 @@
 						</select>
 					</fieldset>
 					<fieldset>
-						<label for="birthday-year">Year</label>
-						<input type="text" name="birthday-year" id="birthday-year" />
+						<label for="year">Year</label>
+						<input type="text" name="year" id="year" />
 					</fieldset>
 				</fieldset>
 				<fieldset>
 					<button type="submit">Submit</button>
 				</fieldset>
-				<input type="hidden" class="user-code" id="user-code" value="1234" />
+				<input type="hidden" class="code" name="code" id="code" value="<?php echo date('dmY') . uniqid(); ?>" />
+				<p id="form-messages"></p>
+				<div id="error-messages">
+					<div class="container">
+					</div>
+				</div>
 			</form>
 		</section>
 	</div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js?v=1.0"></script>
 </body>
 

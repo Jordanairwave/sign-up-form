@@ -73,3 +73,6 @@ img { max-width: 100%; }
 
 
 /* Form Styling */
+form label,
+form input { display: block; }
+form fieldset.birthday-wrapper fieldset { display: inline-block; }
